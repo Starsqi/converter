@@ -23,6 +23,10 @@ public class Measurement {
 
     @Override
     public String toString() {
-        return (Parser.parse(value)) + " " + type;
+        if (isKnown()){
+        return value + " " + type;
+        } else {
+            return "?" + " " + type;
+        }
     }
 }

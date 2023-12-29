@@ -33,8 +33,7 @@ public class MeasurementAnalyzer {
 
                 getConclusion(unknownPair, newListOfValuePairs, tempKeyValue, tempResultDigit, conclusion);
             } else if (knownMeasurementType.equals(knownPair.getSecond().getType())) {
-                double tempResultDigit = (knownPair.getFirst().getValue() / knownPair.getSecond().getValue()) *
-                    resultDigit;
+                double tempResultDigit = (knownPair.getFirst().getValue() / knownPair.getSecond().getValue()) * resultDigit;
                 String tempKeyValue = knownPair.getFirst().getType();
 
                 List<MeasurementPair> newListOfValuePairs = new ArrayList<>(knownPairs);

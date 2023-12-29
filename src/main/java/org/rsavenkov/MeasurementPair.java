@@ -35,7 +35,7 @@ public class MeasurementPair {
         if (second.isKnown()) {
             return first.toString() + " = " + second.toString();
         }
-        else {
+        {
             return "Conversion not possible.";
         }
     }

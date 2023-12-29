@@ -23,6 +23,9 @@ public class Main {
                 for (MeasurementPair measurementPair : conclusion) {
                     System.out.println(measurementPair);
                 }
+                if (conclusion.isEmpty()){
+                    System.out.println(unknownPair);
+                }
             }
         }
     }
